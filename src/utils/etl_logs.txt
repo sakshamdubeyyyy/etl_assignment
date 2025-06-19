@@ -1,0 +1,84 @@
+[2025-06-19T09:21:28.226Z] Deleting existing records from MySQL tables...
+[2025-06-19T09:21:28.312Z] ✅ MySQL tables cleared.
+[2025-06-19T09:21:28.313Z] Starting to load grades...
+[2025-06-19T09:21:28.332Z] Inserted grade: {"grade_id":"1","grade_code":"A1","grade_label":"Outstanding","percentage_range":"91-100","gpa_equivalent":"4"}
+[2025-06-19T09:21:28.338Z] Inserted grade: {"grade_id":"2","grade_code":"A2","grade_label":"Excellent","percentage_range":"81-90","gpa_equivalent":"3.6"}
+[2025-06-19T09:21:28.347Z] Inserted grade: {"grade_id":"3","grade_code":"B1","grade_label":"Very Good","percentage_range":"71-80","gpa_equivalent":"3.2"}
+[2025-06-19T09:21:28.355Z] Inserted grade: {"grade_id":"4","grade_code":"B2","grade_label":"Good","percentage_range":"61-70","gpa_equivalent":"2.8"}
+[2025-06-19T09:21:28.362Z] Inserted grade: {"grade_id":"5","grade_code":"C1","grade_label":"Above Average","percentage_range":"51-60","gpa_equivalent":"2.4"}
+[2025-06-19T09:21:28.369Z] Inserted grade: {"grade_id":"6","grade_code":"C2","grade_label":"Average","percentage_range":"41-50","gpa_equivalent":"2"}
+[2025-06-19T09:21:28.379Z] Inserted grade: {"grade_id":"7","grade_code":"D","grade_label":"Pass","percentage_range":"33-40","gpa_equivalent":"1.6"}
+[2025-06-19T09:21:28.387Z] Inserted grade: {"grade_id":"8","grade_code":"E1","grade_label":"Needs Improvement","percentage_range":"21-32","gpa_equivalent":"1.2"}
+[2025-06-19T09:21:28.396Z] Inserted grade: {"grade_id":"9","grade_code":"E2","grade_label":"Fail","percentage_range":"0-20","gpa_equivalent":"0"}
+[2025-06-19T09:21:28.398Z] ✅ Grades loaded.
+[2025-06-19T09:21:30.330Z] Starting to load students...
+[2025-06-19T09:21:30.369Z] Inserted department: Computer Science
+[2025-06-19T09:21:30.382Z] Inserted student: 101
+[2025-06-19T09:21:30.390Z] Inserted subject: Data Structures & Algorithms
+[2025-06-19T09:21:30.402Z] Inserted mark: student_id=101, subject=Data Structures & Algorithms, marks=78
+[2025-06-19T09:21:30.411Z] Inserted subject: Operating Systems
+[2025-06-19T09:21:30.422Z] Inserted mark: student_id=101, subject=Operating Systems, marks=70
+[2025-06-19T09:21:30.431Z] Inserted subject: Computer Networks
+[2025-06-19T09:21:30.441Z] Inserted mark: student_id=101, subject=Computer Networks, marks=64
+[2025-06-19T09:21:30.449Z] Inserted subject: Database Management Systems (DBMS)
+[2025-06-19T09:21:30.460Z] Inserted mark: student_id=101, subject=Database Management Systems (DBMS), marks=54
+[2025-06-19T09:21:30.469Z] Inserted subject: Web Technologies
+[2025-06-19T09:21:30.478Z] Inserted mark: student_id=101, subject=Web Technologies, marks=77
+[2025-06-19T09:21:30.487Z] Inserted department: Electrical Engineering
+[2025-06-19T09:21:30.497Z] Inserted student: 102
+[2025-06-19T09:21:30.506Z] Inserted subject: Circuit Theory
+[2025-06-19T09:21:30.518Z] Inserted mark: student_id=102, subject=Circuit Theory, marks=56
+[2025-06-19T09:21:30.527Z] Inserted subject: Electrical Machines
+[2025-06-19T09:21:30.539Z] Inserted mark: student_id=102, subject=Electrical Machines, marks=43
+[2025-06-19T09:21:30.546Z] Inserted subject: Power Systems
+[2025-06-19T09:21:30.557Z] Inserted mark: student_id=102, subject=Power Systems, marks=78
+[2025-06-19T09:21:30.568Z] Inserted subject: Control Systems
+[2025-06-19T09:21:30.578Z] Inserted mark: student_id=102, subject=Control Systems, marks=45
+[2025-06-19T09:21:30.587Z] Inserted subject: Electromagnetic Fields
+[2025-06-19T09:21:30.601Z] Inserted mark: student_id=102, subject=Electromagnetic Fields, marks=48
+[2025-06-19T09:21:30.611Z] Inserted department: Mechanical Engineering
+[2025-06-19T09:21:30.624Z] Inserted student: 103
+[2025-06-19T09:21:30.633Z] Inserted subject: Engineering Mechanics
+[2025-06-19T09:21:30.640Z] Inserted mark: student_id=103, subject=Engineering Mechanics, marks=67
+[2025-06-19T09:21:30.646Z] Inserted subject: Thermodynamics
+[2025-06-19T09:21:30.653Z] Inserted mark: student_id=103, subject=Thermodynamics, marks=56
+[2025-06-19T09:21:30.658Z] Inserted subject: Heat and Mass Transfer
+[2025-06-19T09:21:30.666Z] Inserted mark: student_id=103, subject=Heat and Mass Transfer, marks=89
+[2025-06-19T09:21:30.671Z] Inserted subject: Machine Design
+[2025-06-19T09:21:30.679Z] Inserted mark: student_id=103, subject=Machine Design, marks=97
+[2025-06-19T09:21:30.686Z] Inserted department: Electrical Engineering
+[2025-06-19T09:21:30.697Z] Inserted student: 104
+[2025-06-19T09:21:30.705Z] Inserted subject: Circuit Theory
+[2025-06-19T09:21:30.717Z] Inserted mark: student_id=104, subject=Circuit Theory, marks=75
+[2025-06-19T09:21:30.724Z] Inserted subject: Electrical Machines
+[2025-06-19T09:21:30.735Z] Inserted mark: student_id=104, subject=Electrical Machines, marks=56
+[2025-06-19T09:21:30.745Z] Inserted subject: Power Systems
+[2025-06-19T09:21:30.756Z] Inserted mark: student_id=104, subject=Power Systems, marks=52
+[2025-06-19T09:21:30.767Z] Inserted subject: Control Systems
+[2025-06-19T09:21:30.776Z] Inserted mark: student_id=104, subject=Control Systems, marks=53
+[2025-06-19T09:21:30.785Z] Inserted subject: Electromagnetic Fields
+[2025-06-19T09:21:30.793Z] Inserted mark: student_id=104, subject=Electromagnetic Fields, marks=54
+[2025-06-19T09:21:30.802Z] Inserted department: Computer Science
+[2025-06-19T09:21:30.811Z] Inserted student: 105
+[2025-06-19T09:21:30.819Z] Inserted subject: Data Structures & Algorithms
+[2025-06-19T09:21:30.828Z] Inserted mark: student_id=105, subject=Data Structures & Algorithms, marks=67
+[2025-06-19T09:21:30.836Z] Inserted subject: Operating Systems
+[2025-06-19T09:21:30.845Z] Inserted mark: student_id=105, subject=Operating Systems, marks=54
+[2025-06-19T09:21:30.853Z] Inserted subject: Computer Networks
+[2025-06-19T09:21:30.861Z] Inserted mark: student_id=105, subject=Computer Networks, marks=89
+[2025-06-19T09:21:30.868Z] Inserted subject: Database Management Systems (DBMS)
+[2025-06-19T09:21:30.877Z] Inserted mark: student_id=105, subject=Database Management Systems (DBMS), marks=45
+[2025-06-19T09:21:30.883Z] Inserted subject: Web Technologies
+[2025-06-19T09:21:30.891Z] Inserted mark: student_id=105, subject=Web Technologies, marks=90
+[2025-06-19T09:21:30.893Z] ✅ Students, Departments, Subjects, and Marks loaded.
+[2025-06-19T09:21:35.610Z] Connecting to PostgreSQL...
+[2025-06-19T09:21:35.747Z] Connected to PostgreSQL.
+[2025-06-19T09:21:35.748Z] Deleting existing records from PostgreSQL tables...
+[2025-06-19T09:21:35.783Z] ✅ PostgreSQL tables cleared.
+[2025-06-19T09:21:35.785Z] Starting data transfer from MySQL...
+[2025-06-19T09:21:35.852Z] Transferred student: 101, GPA: 2.8
+[2025-06-19T09:21:35.856Z] Transferred student: 102, GPA: 2.4
+[2025-06-19T09:21:35.861Z] Transferred student: 103, GPA: 3.2
+[2025-06-19T09:21:35.867Z] Transferred student: 104, GPA: 2.4
+[2025-06-19T09:21:35.873Z] Transferred student: 105, GPA: 2.8
+[2025-06-19T09:21:35.875Z] ✅ Data transferred from MySQL to PostgreSQL.

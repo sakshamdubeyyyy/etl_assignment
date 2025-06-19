@@ -1,5 +1,5 @@
 const path = require("path");
-
+const fs = require("fs");
 const logFilePath = path.join(__dirname, "etl_logs.txt");
 
 function log(message) {

@@ -1,9 +1,12 @@
 const fs = require("fs");
 const csv = require("csv-parser");
 const { mysqlConn } = require("./config/db");
+const { log } = require("./utils/log");
+const { purgeMySQLTables } = require("./utils/purge");
 
 async function loadGrades() {
   const rows = [];
+  log("Starting to load grades...");
   fs.createReadStream("./data/grade.txt")
     .pipe(csv())
     .on("data", (row) => rows.push(row))
@@ -16,31 +19,33 @@ async function loadGrades() {
           row.percentage_range,
           row.gpa_equivalent,
         ]);
+        log(`Inserted grade: ${JSON.stringify(row)}`);
       }
-      console.log("✅ Grades loaded.");
+      log("✅ Grades loaded.");
     });
 }
 
 async function loadStudents() {
   const rows = [];
+  log("Starting to load students...");
   fs.createReadStream("./data/students.txt")
     .pipe(csv())
     .on("data", (row) => rows.push(row))
     .on("end", async () => {
       for (const row of rows) {
         try {
-          // 1. Insert Department
           await mysqlConn.query(
             "INSERT IGNORE INTO DEPARTMENTS(DEPARTMENTS_NAME) VALUES (?)",
             [row.department.trim()]
           );
+          log(`Inserted department: ${row.department.trim()}`);
+
           const [deptIdRow] = await mysqlConn.query(
             "SELECT DEPARTMENTS_DEPT_ID FROM DEPARTMENTS WHERE DEPARTMENTS_NAME = ?",
             [row.department.trim()]
           );
           const dept_id = deptIdRow[0].DEPARTMENTS_DEPT_ID;
 
-          // 2. Insert Student
           await mysqlConn.query(
             "INSERT INTO STUDENTS VALUES (?, ?, ?, ?, ?, ?)",
             [
@@ -52,8 +57,8 @@ async function loadStudents() {
               row.joining_date,
             ]
           );
+          log(`Inserted student: ${row.student_id}`);
 
-          // 3. Insert Subjects and Marks
           for (let i = 1; i <= 5; i++) {
             const subject = row[`subject${i}`]?.trim();
             const marks = parseInt(
@@ -62,11 +67,11 @@ async function loadStudents() {
 
             if (!subject || isNaN(marks)) continue;
 
-            // Insert subject
             await mysqlConn.query(
               "INSERT IGNORE INTO SUBJECTS(SUBJECT_NAME, SUBJECT_DEPT_ID) VALUES (?, ?)",
               [subject, dept_id]
             );
+            log(`Inserted subject: ${subject}`);
 
             const [subjectIdRow] = await mysqlConn.query(
               "SELECT SUBJECT_ID FROM SUBJECTS WHERE SUBJECT_NAME = ?",
@@ -74,23 +79,30 @@ async function loadStudents() {
             );
             const subject_id = subjectIdRow[0].SUBJECT_ID;
 
-            // Insert mark
             await mysqlConn.query(
               "INSERT INTO MARKS(MARKS_STUDENT_ID, MARKS_SUBJECT_ID, MARKS_SCORED) VALUES (?, ?, ?)",
               [row.student_id, subject_id, marks]
             );
+            log(
+              `Inserted mark: student_id=${row.student_id}, subject=${subject}, marks=${marks}`
+            );
           }
         } catch (err) {
-          console.error(
-            `❌ Error processing student ${row.student_id}:`,
-            err.message
-          );
+          log(`❌ Error processing student ${row.student_id}: ${err.message}`);
         }
       }
 
-      console.log("✅ Students, Departments, Subjects, and Marks loaded.");
+      log("✅ Students, Departments, Subjects, and Marks loaded.");
     });
 }
 
-// Run both loaders
-loadGrades().then(loadStudents).catch(console.error);
+(async () => {
+  try {
+    await purgeMySQLTables();
+    await loadGrades();
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await loadStudents();
+  } catch (err) {
+    log(`❌ Unexpected error: ${err.message}`);
+  }
+})();
