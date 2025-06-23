@@ -1,11 +1,25 @@
 const path = require("path");
 const fs = require("fs");
-const logFilePath = path.join(__dirname, "etl_logs.txt");
+
+function getDateString() {
+  const now = new Date();
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
 
 function log(message, type = "info") {
-  const timestamp = new Date().toLocaleString(); // Friendlier format
-  let symbol;
-  let label;
+  const timestamp = new Date().toLocaleString();
+  const dateString = getDateString();
+  const logDir = path.join(__dirname, "logs"); 
+  const logFilePath = path.join(logDir, `etl_logs_${dateString}.txt`);
+
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir); 
+  }
+
+  let symbol, label;
 
   switch (type) {
     case "success":
