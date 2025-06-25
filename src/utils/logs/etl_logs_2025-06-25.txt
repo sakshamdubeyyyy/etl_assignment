@@ -1,0 +1,190 @@
+ℹ️ [6/25/2025, 11:10:17 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:10:18 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:10:18 AM] [INFO] 🧹 Deleting existing records from PostgreSQL tables...
+ℹ️ [6/25/2025, 11:11:11 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:11:11 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:11:11 AM] [INFO] 🧹 Deleting existing records from PostgreSQL tables...
+ℹ️ [6/25/2025, 11:13:42 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:13:42 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:13:42 AM] [INFO] 🧹 Deleting existing records from PostgreSQL tables...
+ℹ️ [6/25/2025, 11:14:44 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:14:44 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:14:44 AM] [INFO] 🧹 Deleting existing records from PostgreSQL tables...
+ℹ️ [6/25/2025, 11:15:58 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] 🧹 Attempting to connect to PostgreSQL...
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] 🔌 Connected to PostgreSQL.
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] 🧹 Deleting existing records from PostgreSQL table `student_academics`...
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] ✅ PostgreSQL table cleared. Rows affected: 5
+ℹ️ [6/25/2025, 11:15:59 AM] [INFO] 🔌 PostgreSQL connection closed.
+ℹ️ [6/25/2025, 11:17:14 AM] [INFO] 📘 Starting to load grade information...
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Outstanding (A1)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Excellent (A2)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Very Good (B1)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Good (B2)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Above Average (C1)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Average (C2)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Pass (D)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Needs Improvement (E1)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] 📄 Grade inserted → Fail (E2)
+✅ [6/25/2025, 11:17:14 AM] [SUCCESS] ✅ All 9 grades have been processed.
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 👥 Starting to load student data...
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 🏢 Department ensured → Computer Science
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] 🧑‍🎓 Student added → John Doe (ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Data Structures & Algorithms
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Data Structures & Algorithms: 78 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Operating Systems
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Operating Systems: 70 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Computer Networks
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Computer Networks: 64 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Database Management Systems (DBMS)
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Database Management Systems (DBMS): 54 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Web Technologies
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Web Technologies: 77 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 🏢 Department ensured → Electrical Engineering
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] 🧑‍🎓 Student added → Jane Smith (ID: 102)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Circuit Theory
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Circuit Theory: 56 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Electrical Machines
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Electrical Machines: 43 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Power Systems
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Power Systems: 78 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:16 AM] [INFO] 📘 Subject ensured → Control Systems
+✅ [6/25/2025, 11:17:16 AM] [SUCCESS] ✏️ Mark added → Control Systems: 45 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Electromagnetic Fields
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Electromagnetic Fields: 48 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 🏢 Department ensured → Mechanical Engineering
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] 🧑‍🎓 Student added → Bob Johnson (ID: 103)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Engineering Mechanics
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Engineering Mechanics: 67 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Thermodynamics
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Thermodynamics: 56 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Heat and Mass Transfer
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Heat and Mass Transfer: 89 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Machine Design
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Machine Design: 97 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 🏢 Department ensured → Electrical Engineering
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] 🧑‍🎓 Student added → Emily Johnson (ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Circuit Theory
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Circuit Theory: 75 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Electrical Machines
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Electrical Machines: 56 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Power Systems
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Power Systems: 52 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Control Systems
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Control Systems: 53 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Electromagnetic Fields
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Electromagnetic Fields: 54 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 🏢 Department ensured → Computer Science
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] 🧑‍🎓 Student added → Michael Smith (ID: 105)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Data Structures & Algorithms
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Data Structures & Algorithms: 67 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Operating Systems
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Operating Systems: 54 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Computer Networks
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Computer Networks: 89 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Database Management Systems (DBMS)
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Database Management Systems (DBMS): 45 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:17 AM] [INFO] 📘 Subject ensured → Web Technologies
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✏️ Mark added → Web Technologies: 90 (Student ID: 105)
+✅ [6/25/2025, 11:17:17 AM] [SUCCESS] ✅ Successfully processed 5 student records.
+ℹ️ [6/25/2025, 11:17:29 AM] [INFO] 🔌 Connecting to PostgreSQL...
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] ✅ Successfully connected to PostgreSQL.
+ℹ️ [6/25/2025, 11:17:29 AM] [INFO] 🚀 Starting data transfer from MySQL to PostgreSQL...
+ℹ️ [6/25/2025, 11:17:29 AM] [INFO] 📊 Retrieved 5 student records from MySQL.
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] 📦 Transferred → John Doe (ID: 101) | GPA: 2.8
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] 📦 Transferred → Jane Smith (ID: 102) | GPA: 2.4
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] 📦 Transferred → Bob Johnson (ID: 103) | GPA: 3.2
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] 📦 Transferred → Emily Johnson (ID: 104) | GPA: 2.4
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] 📦 Transferred → Michael Smith (ID: 105) | GPA: 2.8
+✅ [6/25/2025, 11:17:29 AM] [SUCCESS] ✅ All 5 student records processed for PostgreSQL.
+ℹ️ [6/25/2025, 11:17:29 AM] [INFO] 🔌 PostgreSQL connection closed.
+ℹ️ [6/25/2025, 11:17:40 AM] [INFO] 🧹 Deleting existing records from MySQL tables...
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] ✅ MySQL tables cleared.
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] 🧹 Attempting to connect to PostgreSQL...
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] 🔌 Connected to PostgreSQL.
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] 🧹 Deleting existing records from PostgreSQL table `student_academics`...
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] ✅ PostgreSQL table cleared. Rows affected: 5
+ℹ️ [6/25/2025, 11:17:41 AM] [INFO] 🔌 PostgreSQL connection closed.
+ℹ️ [6/25/2025, 11:17:54 AM] [INFO] 📘 Starting to load grade information...
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Outstanding (A1)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Excellent (A2)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Very Good (B1)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Good (B2)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Above Average (C1)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Average (C2)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Pass (D)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Needs Improvement (E1)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] 📄 Grade inserted → Fail (E2)
+✅ [6/25/2025, 11:17:54 AM] [SUCCESS] ✅ All 9 grades have been processed.
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 👥 Starting to load student data...
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 🏢 Department ensured → Computer Science
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] 🧑‍🎓 Student added → John Doe (ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Data Structures & Algorithms
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Data Structures & Algorithms: 78 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Operating Systems
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Operating Systems: 70 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Computer Networks
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Computer Networks: 64 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Database Management Systems (DBMS)
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Database Management Systems (DBMS): 54 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Web Technologies
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Web Technologies: 77 (Student ID: 101)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 🏢 Department ensured → Electrical Engineering
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] 🧑‍🎓 Student added → Jane Smith (ID: 102)
+ℹ️ [6/25/2025, 11:17:56 AM] [INFO] 📘 Subject ensured → Circuit Theory
+✅ [6/25/2025, 11:17:56 AM] [SUCCESS] ✏️ Mark added → Circuit Theory: 56 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Electrical Machines
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Electrical Machines: 43 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Power Systems
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Power Systems: 78 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Control Systems
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Control Systems: 45 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Electromagnetic Fields
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Electromagnetic Fields: 48 (Student ID: 102)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 🏢 Department ensured → Mechanical Engineering
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] 🧑‍🎓 Student added → Bob Johnson (ID: 103)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Engineering Mechanics
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Engineering Mechanics: 67 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Thermodynamics
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Thermodynamics: 56 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Heat and Mass Transfer
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Heat and Mass Transfer: 89 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Machine Design
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Machine Design: 97 (Student ID: 103)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 🏢 Department ensured → Electrical Engineering
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] 🧑‍🎓 Student added → Emily Johnson (ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Circuit Theory
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Circuit Theory: 75 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Electrical Machines
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Electrical Machines: 56 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Power Systems
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Power Systems: 52 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Control Systems
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Control Systems: 53 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Electromagnetic Fields
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Electromagnetic Fields: 54 (Student ID: 104)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 🏢 Department ensured → Computer Science
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] 🧑‍🎓 Student added → Michael Smith (ID: 105)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Data Structures & Algorithms
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Data Structures & Algorithms: 67 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Operating Systems
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Operating Systems: 54 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Computer Networks
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Computer Networks: 89 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Database Management Systems (DBMS)
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Database Management Systems (DBMS): 45 (Student ID: 105)
+ℹ️ [6/25/2025, 11:17:57 AM] [INFO] 📘 Subject ensured → Web Technologies
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✏️ Mark added → Web Technologies: 90 (Student ID: 105)
+✅ [6/25/2025, 11:17:57 AM] [SUCCESS] ✅ Successfully processed 5 student records.
+ℹ️ [6/25/2025, 11:18:10 AM] [INFO] 🔌 Connecting to PostgreSQL...
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] ✅ Successfully connected to PostgreSQL.
+ℹ️ [6/25/2025, 11:18:10 AM] [INFO] 🚀 Starting data transfer from MySQL to PostgreSQL...
+ℹ️ [6/25/2025, 11:18:10 AM] [INFO] 📊 Retrieved 5 student records from MySQL.
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] 📦 Transferred → John Doe (ID: 101) | GPA: 2.8
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] 📦 Transferred → Jane Smith (ID: 102) | GPA: 2.4
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] 📦 Transferred → Bob Johnson (ID: 103) | GPA: 3.2
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] 📦 Transferred → Emily Johnson (ID: 104) | GPA: 2.4
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] 📦 Transferred → Michael Smith (ID: 105) | GPA: 2.8
+✅ [6/25/2025, 11:18:10 AM] [SUCCESS] ✅ All 5 student records processed for PostgreSQL.
+ℹ️ [6/25/2025, 11:18:10 AM] [INFO] 🔌 PostgreSQL connection closed.

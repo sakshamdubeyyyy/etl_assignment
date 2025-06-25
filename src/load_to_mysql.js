@@ -1,8 +1,8 @@
+// load_to_mysql.js
 const fs = require("fs");
 const csv = require("csv-parser");
 const { mysqlConn } = require("./config/db");
 const { log } = require("./utils/log");
-const { purgeMySQLTables } = require("./utils/purge");
 
 function validateRow(row, requiredFields) {
   for (const field of requiredFields) {
@@ -160,15 +160,11 @@ async function loadStudents() {
 
 (async () => {
   try {
-    log("🧹 Clearing existing MySQL tables...", "info");
-    await purgeMySQLTables();
-    log("✅ Tables cleared successfully.", "success");
-
     await loadGrades();
-    await new Promise((resolve) => setTimeout(resolve, 2000)); 
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     await loadStudents();
   } catch (err) {
-    log(`❌ Unexpected error during ETL: ${err.message}`, "error");
+    log(`❌ Unexpected error during MySQL ETL: ${err.message}`, "error");
     process.exit(1);
   }
 })();

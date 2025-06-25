@@ -1,17 +1,12 @@
 const { mysqlConn, pgClient } = require("./config/db");
 const mapToGPA = require("./utils/gpaMapper");
 const { log } = require("./utils/log");
-const { purgePostgresTables } = require("./utils/purge");
 
 (async () => {
   try {
     log("🔌 Connecting to PostgreSQL...", "info");
     await pgClient.connect();
     log("✅ Successfully connected to PostgreSQL.", "success");
-
-    log("🧹 Clearing existing PostgreSQL data...", "info");
-    await purgePostgresTables();
-    log("✅ PostgreSQL tables purged.", "success");
 
     log("🚀 Starting data transfer from MySQL to PostgreSQL...", "info");
 
