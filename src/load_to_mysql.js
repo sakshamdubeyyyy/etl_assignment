@@ -1,4 +1,3 @@
-// load_to_mysql.js
 const fs = require("fs");
 const csv = require("csv-parser");
 const { mysqlConn } = require("./config/db");
@@ -61,12 +60,12 @@ async function loadGrades() {
       }
     });
 }
-
 async function loadStudents() {
   const filePath = "./data/students.txt";
   validateFile(filePath);
 
   const rows = [];
+  const departmentCache = {}; // 🧠 Cache to avoid redundant DB hits
   log("👥 Starting to load student data...", "info");
 
   fs.createReadStream(filePath)
@@ -85,19 +84,28 @@ async function loadStudents() {
           ]);
 
           const deptName = row.department.trim();
+          let dept_id;
 
-          await mysqlConn.query(
-            "INSERT IGNORE INTO DEPARTMENTS(DEPARTMENTS_NAME) VALUES (?)",
-            [deptName]
-          );
-          log(`🏢 Department ensured → ${deptName}`, "info");
+          if (departmentCache[deptName]) {
+            dept_id = departmentCache[deptName];
+          } else {
+            await mysqlConn.query(
+              "INSERT IGNORE INTO DEPARTMENTS(DEPARTMENTS_NAME) VALUES (?)",
+              [deptName]
+            );
 
-          const [deptIdRow] = await mysqlConn.query(
-            "SELECT DEPARTMENTS_DEPT_ID FROM DEPARTMENTS WHERE DEPARTMENTS_NAME = ?",
-            [deptName]
-          );
-          const dept_id = deptIdRow[0]?.DEPARTMENTS_DEPT_ID;
-          if (!dept_id) throw new Error("Department ID not found");
+            const [deptIdRow] = await mysqlConn.query(
+              "SELECT DEPARTMENTS_DEPT_ID FROM DEPARTMENTS WHERE DEPARTMENTS_NAME = ?",
+              [deptName]
+            );
+
+            dept_id = deptIdRow[0]?.DEPARTMENTS_DEPT_ID;
+            if (!dept_id)
+              throw new Error(`Department ID not found for: ${deptName}`);
+
+            departmentCache[deptName] = dept_id;
+            log(`🏢 Department ensured → ${deptName}`, "info");
+          }
 
           await mysqlConn.query(
             "INSERT INTO STUDENTS VALUES (?, ?, ?, ?, ?, ?)",
@@ -134,7 +142,8 @@ async function loadStudents() {
               [subject]
             );
             const subject_id = subjectIdRow[0]?.SUBJECT_ID;
-            if (!subject_id) throw new Error("Subject ID not found");
+            if (!subject_id)
+              throw new Error(`Subject ID not found for: ${subject}`);
 
             await mysqlConn.query(
               "INSERT INTO MARKS(MARKS_STUDENT_ID, MARKS_SUBJECT_ID, MARKS_SCORED) VALUES (?, ?, ?)",
