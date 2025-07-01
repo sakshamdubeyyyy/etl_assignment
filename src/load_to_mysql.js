@@ -65,7 +65,7 @@ async function loadStudents() {
   validateFile(filePath);
 
   const rows = [];
-  const departmentCache = {}; // 🧠 Cache to avoid redundant DB hits
+  const departmentCache = {}; 
   log("👥 Starting to load student data...", "info");
 
   fs.createReadStream(filePath)

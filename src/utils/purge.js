@@ -9,7 +9,7 @@ async function purgeMySQLTables() {
     await mysqlConn.query("DELETE FROM SUBJECTS");
     await mysqlConn.query("DELETE FROM STUDENTS");
     await mysqlConn.query("DELETE FROM DEPARTMENTS");
-    await mysqlConn.query("DELETE FROM GRADES");
+    await mysqlConn.query("DELETE FROM GRADES");   
     await mysqlConn.query("SET FOREIGN_KEY_CHECKS = 1");
     log("✅ MySQL tables cleared.");
   } catch (err) {
